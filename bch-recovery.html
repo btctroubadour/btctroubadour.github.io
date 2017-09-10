@@ -1,0 +1,67 @@
+<!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso16.css" /> 
+
+<!--Font Awesome (added because you use icons in your prepend/append)-->
+<link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+<!-- Inline CSS based on choices in "Settings" tab -->
+<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: #111111}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+
+<!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+<div class="bootstrap-iso">
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col-md-6 col-sm-6 col-xs-12">
+    <form method="post">
+     <div class="form-group ">
+      <label class="control-label requiredField" for="name">
+       BTC-segwit Public Key
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-key">
+        </i>
+       </div>
+       <input class="form-control" id="name" name="name" placeholder="pubkey or pubkeyhash" type="text"/>
+      </div>
+      <span class="help-block" id="hint_name">
+       Fill in your BTC-segwit public key or its hash.
+      </span>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="text">
+       BCH Recovery Address
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-tag">
+        </i>
+       </div>
+       <input class="form-control" id="text" name="text" placeholder="address" type="text"/>
+      </div>
+      <span class="help-block" id="hint_text">
+       Fill in the BCH address that you'd like your recovered money to be sent to.
+      </span>
+     </div>
+     <div class="form-group">
+      <div>
+       <button class="btn btn-primary " name="submit" type="submit">
+        Submit
+       </button>
+      </div>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+</div>
+
+
+<!-- Extra JavaScript/CSS added manually in "Settings" tab -->
+<script>alert("Welcome, /u/dskloet!");</script>
